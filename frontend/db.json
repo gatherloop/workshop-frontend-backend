@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "age": 19,
+      "address": "Gwenborough",
+      "phone": "1-770-736-8031 x56442"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "age": 19,
+      "address": "Wisokyburgh",
+      "phone": "010-692-6593 x09125"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "age": 19,
+      "address": "McKenziehaven",
+      "phone": "1-463-123-4447"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "age": 19,
+      "address": "South Elvis",
+      "phone": "493-170-9623 x156"
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "age": 19,
+      "address": "Roscoeview",
+      "phone": "(254)954-1289"
+    },
+    {
+      "name": "Andri Purnomo",
+      "age": "21",
+      "address": "Jl raya condong, Condong,Gading, Probolinggo, Indonesia",
+      "phone": "08123456789",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "age": "1",
+      "address": "test",
+      "phone": "9",
+      "id": 7
+    }
+  ]
+}
