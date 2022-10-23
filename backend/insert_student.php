@@ -25,7 +25,7 @@ function insertStudent() {
         if ($insert) {
             $response['message'] = 'success insert student data';
         } else {
-            $response['message'] = 'error insert student data - '. mysqli_error($conn);
+            $response['message'] = 'error insert student data - '. $conn->error;
         }
 
         $conn->close();
