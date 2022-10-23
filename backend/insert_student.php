@@ -19,13 +19,13 @@ function insertStudent() {
         $address = $data->address;
         $phone = $data->phone;
 
-        $query = sprintf("INSERT INTO students (name,age, address, phone) VALUES ('%s', '%s', '%s', '%s')", $name, $age, $address, $phone);
+        $insert = $conn->query(sprintf("INSERT INTO students (name,age, address, phone) VALUES ('%s', '%s', '%s', '%s')", $name, $age, $address, $phone));
 
         $response = [];
-        if (mysqli_query($conn, $query)) {
+        if ($insert) {
             $response['message'] = 'success insert student data';
         } else {
-            $response['message'] = 'error insert student data - '. mysqli_error($conn);
+            $response['message'] = 'error insert student data - '. $conn->error;
         }
 
         $conn->close();
