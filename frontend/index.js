@@ -2,30 +2,30 @@ const listuser = document.getElementById("list-user-wrapper");
 const tBodyUser = document.getElementById("table-user");
 let data;
 
-async function fetchData() {
-  await fetch("http://localhost:4000/users")
+function fetchData() {
+  fetch("http://localhost:4000/users")
     .then((res) => res.json())
-    .then((res) => (data = res))
+    .then((res) => {
+      res.map((user) => {
+        const tr = document.createElement("tr");
+        const tdName = document.createElement("td");
+        const tdAge = document.createElement("td");
+        const tdAddress = document.createElement("td");
+        const tdPhone = document.createElement("td");
+
+        tdName.textContent = user.name;
+        tdAge.textContent = user.age;
+        tdAddress.textContent = user.address;
+        tdPhone.textContent = user.phone;
+        tr.appendChild(tdName);
+        tr.appendChild(tdAge);
+        tr.appendChild(tdAddress);
+        tr.appendChild(tdPhone);
+
+        tBodyUser.appendChild(tr);
+      });
+    })
     .catch((err) => console.log(err));
-
-  data.map((user) => {
-    const tr = document.createElement("tr");
-    const tdName = document.createElement("td");
-    const tdAge = document.createElement("td");
-    const tdAddress = document.createElement("td");
-    const tdPhone = document.createElement("td");
-
-    tdName.textContent = user.name;
-    tdAge.textContent = user.age;
-    tdAddress.textContent = user.address;
-    tdPhone.textContent = user.phone;
-    tr.appendChild(tdName);
-    tr.appendChild(tdAge);
-    tr.appendChild(tdAddress);
-    tr.appendChild(tdPhone);
-
-    tBodyUser.appendChild(tr);
-  });
 }
 
 fetchData();
