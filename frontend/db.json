@@ -34,20 +34,6 @@
       "age": 19,
       "address": "Roscoeview",
       "phone": "(254)954-1289"
-    },
-    {
-      "name": "Andri Purnomo",
-      "age": "21",
-      "address": "Jl raya condong, Condong,Gading, Probolinggo, Indonesia",
-      "phone": "08123456789",
-      "id": 6
-    },
-    {
-      "name": "test",
-      "age": "1",
-      "address": "test",
-      "phone": "9",
-      "id": 7
     }
   ]
 }

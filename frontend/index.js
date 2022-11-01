@@ -1,11 +1,10 @@
-const listuser = document.getElementById("list-user-wrapper");
 const tBodyUser = document.getElementById("table-user");
-let data;
 
 function fetchData() {
   fetch("http://localhost:4000/users")
     .then((res) => res.json())
     .then((res) => {
+      tBodyUser.innerHTML = "";
       res.map((user) => {
         const tr = document.createElement("tr");
         const tdName = document.createElement("td");
@@ -49,6 +48,6 @@ formAddUser.addEventListener("submit", function (e) {
     },
     body: JSON.stringify(payload)
   })
-    .then((res) => console.log(res))
+    .then(() => fetchData())
     .catch((err) => console.log(err));
 });
