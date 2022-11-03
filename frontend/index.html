@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop frontend backend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tambah User</h1>
+    <form id="addUser">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="" placeholder="Input your name" />
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="" placeholder="Input your age" />
+        <label for="address">Adress</label>
+        <input type="text" name="address" id="address" value="" placeholder="Input your addrees" />
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" value="" placeholder="Input your phone" />
+        <button type="submit">Tambah data</button>
+    </form>
+    <h1>Daftar User</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+                <th>Nomor HP</th>
+        </thead>
+        <tbody id="table-user">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./index.js">
+</script>
+
+</html>

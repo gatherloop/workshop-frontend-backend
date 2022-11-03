@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 250px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+}
+
+table {
+  width: 100vw;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 10px;
+}
