@@ -1,8 +1,12 @@
 <?php
 
 require_once('db.php');
+require_once('cors.php');
 
 function getStudents() {
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Headers:  *');
+    header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $conn = connectToDB();
 
